@@ -1,0 +1,211 @@
+/*mobil side*/
+@media screen and (max-width: 390px) {
+    
+/*header*/
+
+#burgericon {
+display: block;
+width: 50px;
+height: auto;
+position: absolute;
+top: 30px;
+right: 20px;
+z-index: 1100;
+cursor: pointer;
+}
+
+#logo {
+padding: 20px;
+height: 80px;
+z-index: 110;
+}
+
+.menu-icons {
+position: absolute;
+top: 20px;
+left: 20px;
+right: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#mobilnav {
+position: fixed;
+width: 100vw;
+height: 90vh;
+background-color: #C3DDF2;  
+padding: 40px 20px;
+box-sizing: border-box;
+z-index: 100;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 20px;
+transform: translateX(100%);
+transition: transform 0.3s ease;
+}
+    
+#mobilnav.active {
+transform: translateX(0);  
+}
+
+#closeicon {
+position: absolute;
+top: 30px;
+right: 20px;
+width: 40px;
+cursor: pointer;
+display: none;
+}
+
+#mobilnav.active #closeicon {
+display: block;
+}
+
+#mobilnav.active ~ #burgericon {
+display: none;
+}
+
+.toggle-submenu::after {
+content: url("images/toggle.svg"); 
+margin-left: 5px;
+display: inline-block;
+transition: transform 0.3s ease; 
+}
+
+.mobile-menu-item.open .toggle-submenu::after {
+transform: rotate(180deg);
+}
+    
+.submenu {
+display: none;
+flex-direction: column;
+align-items: center;
+padding-top: 5px;
+    }
+    
+.submenu a {
+padding: 10px 0;
+color: black;
+text-decoration: none;
+font-size: 16px;
+}
+    
+.mobile-menu-item.open .submenu {
+display: flex;
+}
+
+
+/* Skjul laptop-menuen på mobil */
+#laptopnav {
+display: none;
+}
+
+/*hero billede*/
+.laptopbillede {
+display: none;
+}
+    
+.mobilbillede {
+display: block;
+}
+
+}
+
+/*desktop*/
+@media screen and (min-width: 1440px) {
+header{
+display:flex;
+justify-content:space-between;
+background-color: #F8F0E2;
+padding: 10px 50px 20px 50px;
+z-index: 100;
+position: sticky;
+top: 0;
+}
+
+#logo {
+height: 100px;
+padding: 0; 
+align-items: flex-start;
+z-index: 1000;
+}
+    
+#laptopnav {
+display: flex;
+gap: 80px;
+padding-top: 40px;
+z-index: 1000;   
+}
+
+#laptopnav a {
+text-decoration: none;
+padding: 10px 0;
+font-size: 18px;
+color: #1A1A1A;
+}
+
+/* Dropdown */
+.menu-item {
+position: relative;
+}
+  
+.dropdown {
+display: none;
+position: absolute;
+background-color: #F8F0E2;
+min-width: 140px;
+padding: 10px;
+box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+flex-direction: column;
+}
+  
+.menu-item:hover .dropdown {
+display: flex;
+}
+
+.dropdown {
+left: -10px; 
+}
+
+.dropdown a {
+transition: background-color 0.2s ease;
+}
+
+.dropdown a:hover {
+background-color: #C8BEDF;
+}
+
+/*molib nav*/
+
+#burgericon {
+display: none;
+}
+  
+#mobilnav {
+display: none;
+}
+
+/*hero billede*/
+
+.hero-billede {
+position: relative;
+width: 100%;
+}
+  
+.hero-billede img {
+width: 100%;
+height: auto;
+}
+
+.laptopbillede {
+display: block;
+}
+  
+.mobilbillede {
+display: none;
+}
+
+}
