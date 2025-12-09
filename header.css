@@ -1,7 +1,5 @@
 /*mobil side*/
 @media screen and (max-width: 390px) {
-    
-/*header*/
 
 #burgericon {
 display: block;
@@ -22,9 +20,9 @@ z-index: 110;
 
 .menu-icons {
 position: absolute;
-top: 20px;
+top: 10px;
 left: 20px;
-right: 20px;
+right: 10px;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -97,6 +95,18 @@ font-size: 16px;
 display: flex;
 }
 
+.social-icons {
+display: flex;
+display: flex;
+justify-content: center;
+gap: 10px;
+padding-top: 20px;
+}
+
+.social-icons img {
+height: 20px;
+width: auto;  
+}
 
 /* Skjul laptop-menuen på mobil */
 #laptopnav {
@@ -176,6 +186,10 @@ transition: background-color 0.2s ease;
 
 .dropdown a:hover {
 background-color: #C8BEDF;
+}
+
+.social-icons {
+display: none;
 }
 
 /*molib nav*/

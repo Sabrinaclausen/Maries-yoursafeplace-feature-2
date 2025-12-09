@@ -15,4 +15,4 @@ toggles.forEach(toggle => {
         const parent = toggle.parentElement;
         parent.classList.toggle('open');
       });
-    });
+});
