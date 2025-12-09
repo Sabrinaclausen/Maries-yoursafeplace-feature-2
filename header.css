@@ -1,6 +1,44 @@
+/*header general*/
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.hero-text {
+position: absolute;
+bottom: 150px;
+left: 30px;
+z-index: 10;
+text-align: left;
+}
+
 /*mobil side*/
 @media screen and (max-width: 390px) {
+/*Header*/
+header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background: transparent;
+z-index: 1000;
+}
 
+header {
+transition: background-color 0.5s ease;
+background-color: transparent; 
+}
+
+header.scrolled {
+background-color: rgba(0, 0, 0, 0.25);
+}
+
+/*molib burger menu*/
 #burgericon {
 display: block;
 width: 50px;
@@ -30,8 +68,10 @@ align-items: center;
 
 #mobilnav {
 position: fixed;
+top: 0;              
+left: 0;
 width: 100vw;
-height: 90vh;
+height: 91vh;
 background-color: #C3DDF2;  
 padding: 40px 20px;
 box-sizing: border-box;
@@ -66,6 +106,7 @@ display: block;
 display: none;
 }
 
+/* Undermenu */
 .toggle-submenu::after {
 content: url("images/toggle.svg"); 
 margin-left: 5px;
@@ -82,7 +123,7 @@ display: none;
 flex-direction: column;
 align-items: center;
 padding-top: 5px;
-    }
+}
     
 .submenu a {
 padding: 10px 0;
@@ -95,6 +136,7 @@ font-size: 16px;
 display: flex;
 }
 
+/*social medie ikoner*/
 .social-icons {
 display: flex;
 display: flex;
@@ -108,7 +150,7 @@ height: 20px;
 width: auto;  
 }
 
-/* Skjul laptop-menuen på mobil */
+/*Laptop menu på mobil */
 #laptopnav {
 display: none;
 }
@@ -126,14 +168,10 @@ display: block;
 
 /*desktop*/
 @media screen and (min-width: 1440px) {
-header{
-display:flex;
-justify-content:space-between;
-background-color: #F8F0E2;
+
+header {
 padding: 10px 50px 20px 50px;
-z-index: 100;
-position: sticky;
-top: 0;
+background-color: #F8F0E2;
 }
 
 #logo {
@@ -153,7 +191,7 @@ z-index: 1000;
 #laptopnav a {
 text-decoration: none;
 padding: 10px 0;
-font-size: 18px;
+font-size: 16px;
 color: #1A1A1A;
 }
 
@@ -188,12 +226,12 @@ transition: background-color 0.2s ease;
 background-color: #C8BEDF;
 }
 
+/*social medie ikoner*/
 .social-icons {
 display: none;
 }
 
-/*molib nav*/
-
+/*molib nav på laptop*/
 #burgericon {
 display: none;
 }
@@ -203,7 +241,6 @@ display: none;
 }
 
 /*hero billede*/
-
 .hero-billede {
 position: relative;
 width: 100%;
@@ -212,6 +249,10 @@ width: 100%;
 .hero-billede img {
 width: 100%;
 height: auto;
+}
+
+.hero-text {
+left: 70px;
 }
 
 .laptopbillede {

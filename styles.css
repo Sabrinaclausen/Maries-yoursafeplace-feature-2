@@ -20,7 +20,7 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 @media screen and (max-width: 390px) {
     
 h1{
-color: #1a1a1a; 
+color: #FFFDF8; 
 font-size: 27px;
 font-family: 'playfair display', serif;
 text-transform: uppercase;
@@ -73,7 +73,7 @@ font-size: 18px;
 @media screen and (min-width: 1440px) {
 
 h1{
-color: #1a1a1a; 
+color: #FFFDF8; 
 font-size: 40px;
 font-family: 'playfair display', serif;
 text-transform: uppercase;
