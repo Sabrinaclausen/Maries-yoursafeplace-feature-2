@@ -119,7 +119,7 @@ button {
     justify-content: center;     /* lodret center */
     align-items: center;         /* vandret center */
     text-align: center;
-    padding: 0 20px;      /* samme baggrund som resten */
+    padding: 0 20px;   
 }
 
 .text-container-shop h1 {
