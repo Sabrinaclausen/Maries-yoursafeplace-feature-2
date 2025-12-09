@@ -75,7 +75,56 @@ button {
     max-width: 330px;
 }
 
+.event-grid {
+  display: flex;
+  flex-direction: column; /* mobil = under hinanden */
+  align-items: center;
+}
 
+.event-card {
+    background-color: #FFFDF8;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(26,26,26,0.15);
+    width: 320px;
+   
+}
+
+.event-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.event-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.event-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.event-description {
+    margin: 0;
+}
+
+.text-container-shop { 
+  height: 100vh;               /* fylder hele skærmen */
+    display: flex;               /* centrerer indholdet */
+    flex-direction: column;
+    justify-content: center;     /* lodret center */
+    align-items: center;         /* vandret center */
+    text-align: center;
+    padding: 0 20px;      /* samme baggrund som resten */
+}
+
+.text-container-shop h1 {
+color: #1a1a1a;
+}
 
 /* Mobil */
 @media screen and (max-width: 390px) {
@@ -112,6 +161,14 @@ display: none;
     display: none;
 }
 
+.event-card {
+    margin: 20px auto 20px auto;
+}
+
+.text-container-events {
+  display: none;
+}
+
 }
 
 
@@ -138,7 +195,7 @@ margin-top: 120px;
     max-width: 500px;
 }
 
-.text-container p {
+#text-container-body {
 display: none;
 }
 
@@ -167,5 +224,21 @@ display: none;
 .about-me-two-desktop {
     display: block;
 }
+
+.event-grid {
+    flex-direction: row;     /* nu ved siden af hinanden */
+    justify-content: center;
+    flex-wrap: wrap;         /* hvis der kommer flere, må de gerne hoppe ned */
+    gap: 24px;
+    margin-top: 50px;
+  }
+
+  .text-container-events {
+    margin-top: 150px;
+    max-width: 50%;
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
+
 
 }
