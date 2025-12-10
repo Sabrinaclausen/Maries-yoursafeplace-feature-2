@@ -127,7 +127,7 @@ padding-top: 5px;
     
 .submenu a {
 padding: 10px 0;
-color: black;
+color: #1a1a1a;
 text-decoration: none;
 font-size: 16px;
 }
@@ -190,9 +190,11 @@ z-index: 1000;
 
 #laptopnav a {
 text-decoration: none;
-padding: 10px 0;
 font-size: 16px;
-color: #1A1A1A;
+}
+
+.menu-text:hover{
+color: #C8BEDF;
 }
 
 /* Dropdown */
@@ -205,7 +207,6 @@ display: none;
 position: absolute;
 background-color: #F8F0E2;
 min-width: 140px;
-padding: 10px;
 box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 flex-direction: column;
 }
@@ -220,11 +221,13 @@ left: -10px;
 
 .dropdown a {
 transition: background-color 0.2s ease;
+padding: 10px 10px;
 }
 
 .dropdown a:hover {
 background-color: #C8BEDF;
 }
+
 
 /*social medie ikoner*/
 .social-icons {
@@ -238,6 +241,10 @@ display: none;
   
 #mobilnav {
 display: none;
+}
+
+.active {
+border-bottom: 2px solid #C8BEDF;
 }
 
 /*hero billede*/
