@@ -1,0 +1,72 @@
+.review-card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;  /* hvis du vil have et max */
+  margin: 40px auto;
+}
+
+
+
+.review-content {
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 80%;
+  text-align: center;       /* afstand ind fra kanten */
+}
+
+
+/* Stjerner */
+.review-stars img {
+  width: 20px;               /* tilpas */
+  margin: 0 2px;
+}
+
+/* Brødtekst */
+.review-text {
+  margin: 20px 20px 20px 30px;
+}
+
+/* Hjerter */
+.review-hearts {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.heart {
+  width: 14px;
+  margin-bottom: 40px;
+}
+
+.arrow-left {
+position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  left: 24px;
+}
+
+.arrow-right {
+position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  right: 24px;
+}
+
+/* Mobil */
+@media screen and (max-width: 390px) {
+.review-card .cloud-mobil {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cloud-laptop {
+    display: none;
+}
+
+
+}
