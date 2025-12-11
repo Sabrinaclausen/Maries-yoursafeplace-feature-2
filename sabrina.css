@@ -1,22 +1,25 @@
-/* Mobil */
+/* Mobil som standart */
 .seasonal-news-section {
   display: flex;
   justify-content: center;
   padding: 40px 16px;
 }
 
+/* Kortet */
 .seasonal-news-card {
   position: relative;
   max-width: 480px;
   width: 100%;
 }
 
+/* Blob baggrunds billede mobil */
 .seasonal-news-blob {
   width: 100%;
   display: block;
   margin-top: 115px;
 }
 
+/* Indholdet på kortet */
 .seasonal-news-card-content {
   position: absolute;
   inset: 0;
@@ -27,6 +30,7 @@
   text-align: center;
 }
 
+/* kop billedet */
 .seasonal-news-cup {
   width: 90px;
   height: auto;
@@ -37,7 +41,7 @@
   margin: 0 0 8px;
 }
 
-
+/* liste under nyheder */
 .seasonal-news-list {
   list-style: none;
   padding: 0;
@@ -47,12 +51,14 @@
 margin-top: -5px;
 }
 
+/* liste elementer */
 .seasonal-news-list li {
   display: flex;
   gap: 8px;
   margin-bottom: 6px;
 }
 
+/* hjerte ikon i liste */
 .heart-icon {
   width: 14px;
   height: auto;
@@ -63,27 +69,32 @@ button {
   margin-top: 25px;
 }
 
+/* Desktop blob baggrunds billede */
 .seasonal-news-blob-desktop {
   display: none;
 }
 
+/* Tekst forside  */
 .text-container {
   margin: 70px auto 0 auto;
   text-align: center;
   max-width: 330px;
 }
+
 .text-container-about {
   margin: 40px auto 0 auto;
   text-align: center;
   max-width: 50%;
 }
 
+/* Events sektion */
 .event-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* enkelt event kort */
 .event-card {
   background-color: #FFFDF8;
   padding: 16px;
@@ -95,18 +106,21 @@ button {
    
 }
 
+/* event billede */
 .event-img {
   width: 100%;
   border-radius: 12px;
   margin-bottom: 12px;
 }
 
+/* event indhold */
 .event-content {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
+/* event titel og dato */
 .event-title {
   display: flex;
   justify-content: space-between;
@@ -114,51 +128,57 @@ button {
   text-align: left;
 }
 
+/* event beskrivelse */
 .event-description {
   margin: 0;
 }
 
+/* events tekst på laptop */
 .text-container-events {
   display: none;
 }
 
 /*Om mig*/
-
 .text-container-about{
   margin: 70px auto 0 auto;
   text-align: center;
   max-width: 330px;
 }
 
+/* Ekstra tekst på laptop*/
 #about-extra{
   display: none;
 }
 
+/* Ekstra titel på laptop*/
 #about-extra-title {
   display: none;
 }
 
+/* Billede 1 mobil */
 .about-me-one-mobil {
   width: 100%;
   margin: 0px auto 50px auto;
 }
 
+/* Billede 1 laptop */
 .about-me-one-desktop {
   display: none;
 }
 
+/* Billede 2 mobil */
 .about-me-two-mobil {
   width: 100%;
   margin: 30px auto;
 }
 
+/* Billede 2 laptop */
 .about-me-two-desktop {
   display: none;
 }
 
-
 .text-container-shop { 
-  height: 100vh;
+  height: 100vh; /* fylder hele højden på skærmen */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,7 +193,7 @@ button {
 
 /* Mobil */
 @media screen and (min-width: 480px) {
-  
+
 .seasonal-news-blob-mobile {
   display: block;
 }
@@ -190,10 +210,10 @@ button {
 .seasonal-news-card {
   width: 100%;              /* stort kort på iPad */
   max-width: 80%;
-  margin: 90px auto 0;     /* svarer ca. til din top-spacing */
+  margin: 90px auto 0;
 }
 
-  /* brug desktop-blob på iPad */
+/* brug desktop-blob på iPad */
 .seasonal-news-blob {
   display: none;
 }
@@ -206,7 +226,7 @@ button {
 }
 
 .seasonal-news-card-content {
-  padding: 48px 48px 56px; /* lidt mere luft til siderne på iPad */
+  padding: 48px 48px 56px; 
 }
 
 .text-container {
@@ -308,6 +328,7 @@ button {
   align-items: flex-start
 }
 
+/* tekst på laptop*/
 .text-container-events{
   display: block;
   margin-top: 150px;
@@ -320,7 +341,7 @@ button {
 
 .text-container-about {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; 
   justify-content: center;
   align-items: center; 
   gap: 60px;
@@ -332,6 +353,7 @@ button {
   display: none;
 }
 
+/*større billede på laptop*/
 .about-me-one-desktop {
   display: block;
 }
@@ -340,6 +362,7 @@ button {
   display: none;
 }
 
+/*større billede på laptop*/
 .about-me-two-desktop {
   display: block;
 }

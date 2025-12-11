@@ -1,3 +1,4 @@
+/* Container for hjerterne */
 .heart-wrapper {
     position: fixed;
     left: 0;
@@ -8,6 +9,7 @@
     z-index: -1;
 }
 
+/* Hjerterne */
 .heart {
     position: absolute;
     bottom: -40px;
@@ -15,7 +17,7 @@
     animation: floatUp 6s linear infinite;
 }
 
-
+/* Animation forsinkelser for hjerterne */
 .heart:nth-child(1) { 
     left: 0%; animation-delay: 0s;
 }
@@ -56,6 +58,7 @@
     left: 90%; animation-delay: 0.2s;
 }
 
+/* Animation keyframes */
 @keyframes floatUp {
 0% {
     transform: translate(0, 0) scale(0.8);
