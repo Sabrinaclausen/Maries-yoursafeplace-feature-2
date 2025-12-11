@@ -228,6 +228,10 @@ header {
     background-color: #F8F0E2;
 }
 
+header.scrolled {
+    background-color: #F8F0E2;
+}
+
 #logo {
     height: 100px;
     padding: 0; 
