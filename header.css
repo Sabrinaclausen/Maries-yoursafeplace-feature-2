@@ -47,10 +47,6 @@ header {
     display: none; /* Skjult som standard */
 }
 
-#mobilnav.active {
-    transform: translateX(0); /* Skubber menuen ind på skærmen */
-}
-
 #mobilnav.active #closeicon {
     display: block; /* Viser luk-ikonet når menuen er aktiv */
 }
@@ -77,6 +73,10 @@ header {
     gap: 20px;
     transform: translateX(100%); /* Skubber menuen ud af skærmen som standart */
     transition: transform 0.3s ease;
+}
+
+#mobilnav.active {
+    transform: translateX(0); /* Skubber menuen ind på skærmen */
 }
     
 /* Undermenu */
