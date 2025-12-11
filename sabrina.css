@@ -1,145 +1,343 @@
-/* mobile-first design tiltænkt 360px-480px */
+/* Mobil */
 
-body {
-margin: 0;
-padding: 0;
-background-color: #F8F0E2;
+.seasonal-news-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.seasonal-news-card {
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+}
+
+.seasonal-news-blob {
+  width: 100%;
+  display: block;
+  margin-top: 115px;
+}
+
+.seasonal-news-card-content {
+  position: absolute;
+  inset: 0;
+  padding: 48px 32px 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.seasonal-news-cup {
+  width: 90px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.seasonal-news-card-content p {
+  margin: 0 0 8px;
+}
+
+
+.seasonal-news-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 320px;
+  list-style: none;
+margin-top: -5px;
+}
+
+.seasonal-news-list li {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.heart-icon {
+  width: 14px;
+  height: auto;
+  margin-top: 3px;
 }
 
 button {
-background-color: #C8BEDF;
-color: #1a1a1a; 
-font-family: 'playfair display', serif; 
-font-size: 16px;
-text-transform: uppercase;
-padding: 10px 30px;
-border-radius: 10px;
-border: 1px solid #6E6E6E; 
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); 
+  margin-top: 25px;
 }
 
-button:hover {
-cursor: pointer;
+.seasonal-news-blob-desktop {
+  display: none;
 }
 
-h1, h2, h3, h4, a {
-font-family: 'playfair display', serif;
-text-transform: uppercase;
+.text-container {
+    margin: 70px auto 0 auto;
+    text-align: center;
+    max-width: 330px;
+}
+.text-container-about {
+    margin: 40px auto 0 auto;
+    text-align: center;
+    max-width: 50%;
 }
 
-h2, h3, h4, p, a {
+.event-grid {
+  display: flex;
+  flex-direction: column; /* mobil = under hinanden */
+  align-items: center;
+}
+
+.event-card {
+    background-color: #FFFDF8;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(26,26,26,0.15);
+  flex: 0 0 100%;
+  max-width: 330px;
+     margin: 20px auto 20px auto;
+   
+}
+
+.event-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.event-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.event-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.event-description {
+    margin: 0;
+}
+
+.text-container-events {
+  display: none;
+}
+
+/*Om mig*/
+
+.text-container-about{
+  margin: 70px auto 0 auto;
+    text-align: center;
+    max-width: 330px;
+}
+
+#about-extra{
+    display: none;
+}
+
+#about-extra-title {
+    display: none;
+}
+
+.about-me-one-mobil {
+  width: 100%;
+  margin: 0px auto 50px auto;
+}
+
+.about-me-one-desktop {
+    display: none;
+}
+
+.about-me-two-mobil {
+    width: 100%;
+    margin: 30px auto;
+}
+
+.about-me-two-desktop {
+    display: none;
+}
+
+
+.text-container-shop { 
+  height: 100vh;               /* fylder hele skærmen */
+    display: flex;               /* centrerer indholdet */
+    flex-direction: column;
+    justify-content: center;     /* lodret center */
+    align-items: center;         /* vandret center */
+    text-align: center;
+    padding: 0 20px;   
+}
+
+.text-container-shop h1 {
 color: #1a1a1a;
 }
 
-h1{
-color: #FFFDF8; 
-font-size: 27px;
-text-transform: uppercase;
-margin: 0 0 20px;
-}
-
-h2{
-font-size: 25px;
-text-transform: uppercase;
-margin: 0 0 20px;
-}
-
-h3{
-font-size: 20px;
-text-transform: uppercase;
-margin: 0 0 20px;
-}
-
-h4{
-font-size: 18px;
-text-transform: uppercase;
-margin: 0 0 20px;
-}
-
-p{
-font-size: 16px;
-font-family: 'source sans 3', sans-serif;
-margin: 0 0px;
-}
-
-a{
-color: #1A1A1A;
-text-decoration: none;
-font-size: 16px;
-}
-
-/* lille mobil */
-
-@media screen and (max-width: 360px) {
-    p {
-        font-size: 14px;
-    }
-}
-
-
+/* Mobil */
 @media screen and (min-width: 480px) {
-    
+  
+.seasonal-news-blob-mobile {
+display: block;
 }
 
-/* tablet */
+.seasonal-news-blob-desktop {
+display: none;
+}
+
+}
+
 
 @media screen and (min-width: 768px) {
-    h1{
-    font-size: 35px;
-    }
 
-    h2{ 
-    font-size: 30px;
-    }
+  .seasonal-news-card {
+    width: 100%;              /* stort kort på iPad */
+    max-width: 80%;
+    margin: 90px auto 0;     /* svarer ca. til din top-spacing */
+  }
 
-    h3{
-    font-size: 24px;
-    }
+  /* brug desktop-blob på iPad */
+  .seasonal-news-blob {
+    display: none;
+  }
 
-    h4{
-    font-size: 20px;
-    }
+  .seasonal-news-blob-desktop {
+    display: block;
+    width: 100%;             /* fylder hele kortets bredde */
+    height: auto;
+    margin: 120px auto 0 auto;
+  }
 
-    p{
-    font-size: 18px;
-    }
+  .seasonal-news-card-content {
+    padding: 48px 48px 56px; /* lidt mere luft til siderne på iPad */
+  }
 
-    a{
-    font-size: 16px;
-    }
+  .text-container {
+    margin-top: 150px;
+    max-width: 50%;
+}
+
+/*events iPad*/
+.event-grid {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 0 30px 0 30px; 
+}
+
+.event-card {
+    width: calc(50% - 10px);       /* 2 kort pr. række med 10px gap */
+    margin: 0 0 10px 0;            /* vigtig: ingen auto-margins! */
+  }
+
+.text-container-events{
+  display: block;
+  margin: 150px auto 0 auto;   /* top, højre, bund, venstre */
+  max-width: 50%;
+  text-align: center;
+}
+
+/*om mig ipad*/
+.text-container-about{
+  margin: 70px auto 0 auto;
+    text-align: center;
+    max-width: 50%;
+}
+
+.about-me-one-mobil{
+width: 80%;
+}
+
+.about-me-two{
+width: 80%;
+}
 
 }
 
-/* laptop */
 
+
+
+/* Desktop */
 @media screen and (min-width: 1200px) {
 
-    h1{
-    font-size: 44px;
+.seasonal-news-blob {
+display: none;
+  }
+
+.seasonal-news-blob-desktop {
+display: block;
+  width: 80%;
+  height: auto;             /* centrer billedet */
+  margin-top: 110px;
+}
+
+.seasonal-news-card {
+        max-width: 80%;
+        margin: 0 auto;
     }
 
-    h2{ 
-    font-size: 35px;
-    }
+.text-container {
+    margin-top: 150px;
+    max-width: 50%;
+}
 
-    h3{
-    font-size: 30px;
-    }
+/*event laptop*/
+.event-grid {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+  }
 
-    h4{
-    font-size: 24px;
-    }
+  .text-container-events {
+    margin-top: 150px;
+    max-width: 50%;
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
 
-    p{
-    font-size: 18px;
-    }
+.event-title {
+    display: flex;
+    flex-direction: column;   /* titel + pris under hinanden */
+    align-items: flex-start
+}
 
-    a{
-    font-size: 18px;
-    }
+.text-container-events{
+  display: block;
+    margin-top: 150px;
+    max-width: 50%;
+}
 
-    .button {
-    font-size: 18px;
-    }
+#text-container-body {
+display: none;
+}
+
+.text-container-about {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center; 
+  gap: 60px;
+  max-width: 850px;
+  margin: 100px auto;
+}
+
+.about-me-one-mobil {
+    display: none;
+}
+
+.about-me-one-desktop {
+    display: block;
+}
+
+.about-me-two-mobil {
+    display: none;
+}
+
+.about-me-two-desktop {
+    display: block;
+}
+
 
 }
