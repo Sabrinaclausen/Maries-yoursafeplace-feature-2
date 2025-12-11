@@ -1,7 +1,9 @@
+/* mobile-first design tiltænkt 360px-480px */
+
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #F8F0E2;
+margin: 0;
+padding: 0;
+background-color: #F8F0E2;
 }
 
 button {
@@ -16,44 +18,46 @@ border: 1px solid #6E6E6E;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); 
 }
 
-/* Mobil */
-@media screen and (max-width: 390px) {
-    
+button:hover {
+cursor: pointer;
+}
+
+h1, h2, h3, h4, a {
+font-family: 'playfair display', serif;
+text-transform: uppercase;
+}
+
+h2, h3, h4, p, a {
+color: #1a1a1a;
+}
+
 h1{
 color: #FFFDF8; 
 font-size: 27px;
-font-family: 'playfair display', serif;
 text-transform: uppercase;
 margin: 0 0 20px;
 }
 
 h2{
-color: #1a1a1a; 
 font-size: 25px;
-font-family: 'playfair display', serif;
 text-transform: uppercase;
 margin: 0 0 20px;
 }
 
 h3{
-color: #1a1a1a; 
 font-size: 20px;
-font-family: 'playfair display', serif;
 text-transform: uppercase;
 margin: 0 0 20px;
 }
 
 h4{
-color: #1a1a1a; 
 font-size: 18px;
-font-family: 'playfair display', serif;
 text-transform: uppercase;
 margin: 0 0 20px;
 }
 
 p{
-color: #1a1a1a; 
-font-size: 14px;
+font-size: 16px;
 font-family: 'source sans 3', sans-serif;
 margin: 0 0px;
 }
@@ -61,61 +65,81 @@ margin: 0 0px;
 a{
 color: #1A1A1A;
 text-decoration: none;
-text-transform: uppercase;
-font-family: 'playfair display', serif;
-font-size: 18px;
+font-size: 16px;
+}
+
+/* lille mobil */
+
+@media screen and (max-width: 360px) {
+    p {
+        font-size: 14px;
+    }
 }
 
 
+@media screen and (min-width: 480px) {
+    
 }
 
-/* Desktop */
-@media screen and (min-width: 1440px) {
+/* tablet */
 
-h1{
-color: #FFFDF8; 
-font-size: 40px;
-font-family: 'playfair display', serif;
-text-transform: uppercase;
+@media screen and (min-width: 768px) {
+    h1{
+    font-size: 35px;
+    }
+
+    h2{ 
+    font-size: 30px;
+    }
+
+    h3{
+    font-size: 24px;
+    }
+
+    h4{
+    font-size: 20px;
+    }
+
+    p{
+    font-size: 18px;
+    }
+
+    a{
+    font-size: 16px;
+    }
+
 }
 
-h2{
-color: #1a1a1a; 
-font-size: 30px;
-font-family: 'playfair display', serif;
-text-transform: uppercase;
-}
+/* laptop */
 
-h3{
-color: #1a1a1a;
-font-size: 20px;
-font-family: 'playfair display', serif;
-text-transform: uppercase;
-}
+@media screen and (min-width: 1200px) {
 
-h4{
-color: #1a1a1a;
-font-size: 18px;
-font-family: 'playfair display', serif;
-text-transform: uppercase;
-}
+    h1{
+    font-size: 44px;
+    }
 
-p{
-color: #1a1a1a;
-font-size: 14px;
-font-family: 'source sans 3', sans-serif;
-}
+    h2{ 
+    font-size: 35px;
+    }
 
-a {
-color: #1A1A1A;
-text-decoration: none;
-text-transform: uppercase;
-font-family: 'playfair display', serif;
-font-size: 10px;
-}
+    h3{
+    font-size: 30px;
+    }
 
-.button {
-font-size: 15px;
-}
+    h4{
+    font-size: 24px;
+    }
+
+    p{
+    font-size: 18px;
+    }
+
+    a{
+    font-size: 18px;
+    }
+
+    .button {
+    font-size: 18px;
+    }
 
 }

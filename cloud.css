@@ -1,11 +1,12 @@
+/*Slider*/
 .slideshow-container {
   position: relative;
   width: 100%;
-  max-width: 500px;
   margin: 40px auto;
-  overflow: hidden;      /* så skylaget kan gå lidt ud over kanten */
+  overflow: hidden;
 }
 
+/* anmeldelser - kort */
 .review-card {
   position: relative;
   display: none;
@@ -22,25 +23,27 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* helt midt i */
-  width: 80%;
+  width: 75%;
   text-align: center;
 }
 
-
-/* Stjerner */
 .review-stars img {
   width: 20px;
   margin: 0 2px;
+}
+
+.review-name {
+  margin-bottom: 4px;
 }
 
 .review-text {
   margin: 20px 20px 20px 30px;
 }
 
-/* Hjerter */
+
 .review-heart {
   position: absolute;
-  bottom: 40px;         /* justér til det matcher din Figma */
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -58,31 +61,77 @@
 }
 
 .arrow-left {
-position: absolute;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 24px;
   left: 24px;
-   z-index: 5;   
+  z-index: 5;   
 }
 
 .arrow-right {
-position: absolute;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 24px;
   right: 24px;
-   z-index: 5;   
+  z-index: 5;   
 }
 
-/* Mobil */
-@media screen and (max-width: 390px) {
 .cloud-laptop {
-    display: none;
-  }
-  .cloud-mobil {
-    display: block;
-  }
+  display: none;
+}
 
+.cloud-mobil {
+  display: block;
+}
+
+
+/*Mobil*/
+@media screen and (min-width: 400px) {
+.cloud-laptop {
+  display: none;
+}
+
+.cloud-mobil {
+  display: block;
+  width: 100%;
+}
+
+}
+
+
+/*ipad*/
+@media screen and (min-width: 768px) {
+.cloud-laptop {
+  display: block;
+  width: 100%;
+}
+
+.cloud-mobil {
+  display: none;
+}
+}
+
+
+
+/*Laptop*/
+@media screen and (min-width: 1200px) {
+.cloud-laptop {
+  display: block;
+  width: 100%;
+}
+    
+.cloud-mobil {
+  display: none;
+}
+
+.review-content {
+  width: 40%;
+}
+
+.review-heart {
+  bottom: 130px;
+}
 
 }

@@ -44,5 +44,5 @@ function showSlides(n) {
   clearTimeout(autoTimer);
   autoTimer = setTimeout(function () {
     plusSlides(1);
-  }, 5000);
+  }, 10000);
 }

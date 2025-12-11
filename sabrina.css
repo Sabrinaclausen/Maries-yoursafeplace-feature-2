@@ -1,244 +1,145 @@
-/* Mobil */
+/* mobile-first design tiltænkt 360px-480px */
 
-.seasonal-news-section {
-  display: flex;
-  justify-content: center;
-  padding: 40px 16px;
-}
-
-.seasonal-news-card {
-  position: relative;
-  max-width: 480px;
-  width: 100%;
-}
-
-.seasonal-news-blob {
-  width: 100%;
-  display: block;
-  margin-top: 115px;
-}
-
-.seasonal-news-card-content {
-  position: absolute;
-  inset: 0;
-  padding: 48px 32px 56px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.seasonal-news-cup {
-  width: 90px;
-  height: auto;
-  margin-bottom: 24px;
-}
-
-.seasonal-news-card-content p {
-  margin: 0 0 8px;
-}
-
-
-.seasonal-news-list {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-  max-width: 320px;
-  list-style: none;
-margin-top: -5px;
-}
-
-.seasonal-news-list li {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 6px;
-}
-
-.heart-icon {
-  width: 14px;
-  height: auto;
-  margin-top: 3px;
+body {
+margin: 0;
+padding: 0;
+background-color: #F8F0E2;
 }
 
 button {
-  margin-top: 25px;
+background-color: #C8BEDF;
+color: #1a1a1a; 
+font-family: 'playfair display', serif; 
+font-size: 16px;
+text-transform: uppercase;
+padding: 10px 30px;
+border-radius: 10px;
+border: 1px solid #6E6E6E; 
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); 
 }
 
-.text-container {
-    margin: 70px auto 0 auto;
-    text-align: center;
-    max-width: 330px;
-}
-.text-container-about {
-    margin: 40px auto 0 auto;
-    text-align: center;
-    max-width: 330px;
+button:hover {
+cursor: pointer;
 }
 
-.event-grid {
-  display: flex;
-  flex-direction: column; /* mobil = under hinanden */
-  align-items: center;
+h1, h2, h3, h4, a {
+font-family: 'playfair display', serif;
+text-transform: uppercase;
 }
 
-.event-card {
-    background-color: #FFFDF8;
-    padding: 16px;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(26,26,26,0.15);
-    width: 320px;
-   
-}
-
-.event-img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 12px;
-}
-
-.event-content {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.event-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.event-description {
-    margin: 0;
-}
-
-.text-container-shop { 
-  height: 100vh;               /* fylder hele skærmen */
-    display: flex;               /* centrerer indholdet */
-    flex-direction: column;
-    justify-content: center;     /* lodret center */
-    align-items: center;         /* vandret center */
-    text-align: center;
-    padding: 0 20px;   
-}
-
-.text-container-shop h1 {
+h2, h3, h4, p, a {
 color: #1a1a1a;
 }
 
-/* Mobil */
-@media screen and (max-width: 390px) {
-  
-.seasonal-news-blob-mobile {
-display: block;
+h1{
+color: #FFFDF8; 
+font-size: 27px;
+text-transform: uppercase;
+margin: 0 0 20px;
 }
 
-.seasonal-news-blob-desktop {
-display: none;
+h2{
+font-size: 25px;
+text-transform: uppercase;
+margin: 0 0 20px;
 }
 
-#about-extra{
-    display: none;
+h3{
+font-size: 20px;
+text-transform: uppercase;
+margin: 0 0 20px;
 }
 
-#about-extra-title {
-    display: none;
+h4{
+font-size: 18px;
+text-transform: uppercase;
+margin: 0 0 20px;
 }
 
-.about-me-one-mobil {
-    margin: 10px 0px 50px 0px;
+p{
+font-size: 16px;
+font-family: 'source sans 3', sans-serif;
+margin: 0 0px;
 }
 
-.about-me-one-desktop {
-    display: none;
+a{
+color: #1A1A1A;
+text-decoration: none;
+font-size: 16px;
 }
 
-.about-me-two-mobil {
-    margin: 30px auto;
-}
+/* lille mobil */
 
-.about-me-two-desktop {
-    display: none;
-}
-
-.event-card {
-    margin: 20px auto 20px auto;
-}
-
-.text-container-events {
-  display: none;
-}
-
+@media screen and (max-width: 360px) {
+    p {
+        font-size: 14px;
+    }
 }
 
 
-/* Desktop */
-@media screen and (min-width: 1440px) {
-
-.seasonal-news-blob {
-display: none;
-  }
-
-.seasonal-news-blob-desktop {
-display: block;
-margin-top: 120px;
-
+@media screen and (min-width: 480px) {
+    
 }
 
-  .seasonal-news-card {
-        max-width: 800px;
-        margin: 0 auto;
+/* tablet */
+
+@media screen and (min-width: 768px) {
+    h1{
+    font-size: 35px;
     }
 
-.text-container {
-    margin-top: 150px;
-    max-width: 500px;
+    h2{ 
+    font-size: 30px;
+    }
+
+    h3{
+    font-size: 24px;
+    }
+
+    h4{
+    font-size: 20px;
+    }
+
+    p{
+    font-size: 18px;
+    }
+
+    a{
+    font-size: 16px;
+    }
+
 }
 
-#text-container-body {
-display: none;
-}
+/* laptop */
 
-.text-container-about {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  align-items: center; 
-  gap: 60px;
-  max-width: 850px;
-  margin: 100px auto;
-}
+@media screen and (min-width: 1200px) {
 
-.about-me-one-mobil {
-    display: none;
-}
+    h1{
+    font-size: 44px;
+    }
 
-.about-me-one-desktop {
-    display: block;
-}
+    h2{ 
+    font-size: 35px;
+    }
 
-.about-me-two-mobil {
-    display: none;
-}
+    h3{
+    font-size: 30px;
+    }
 
-.about-me-two-desktop {
-    display: block;
-}
+    h4{
+    font-size: 24px;
+    }
 
-.event-grid {
-    flex-direction: row;     /* nu ved siden af hinanden */
-    justify-content: center;
-    flex-wrap: wrap;         /* hvis der kommer flere, må de gerne hoppe ned */
-    gap: 24px;
-    margin-top: 50px;
-  }
+    p{
+    font-size: 18px;
+    }
 
-  .text-container-events {
-    margin-top: 150px;
-    max-width: 50%;
-    margin: 100px auto 0 auto;
-    text-align: center;
-}
+    a{
+    font-size: 18px;
+    }
 
+    .button {
+    font-size: 18px;
+    }
 
 }
