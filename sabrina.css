@@ -65,7 +65,7 @@ margin-top: -5px;
   margin-top: 3px;
 }
 
-button {
+.button {
   margin-top: 25px;
 }
 
@@ -76,7 +76,7 @@ button {
 
 /* Tekst forside  */
 .text-container {
-  margin: 70px auto 0 auto;
+  margin: 70px auto 20px auto;
   text-align: center;
   max-width: 330px;
 }
@@ -208,7 +208,7 @@ button {
 @media screen and (min-width: 768px) {
 
 .seasonal-news-card {
-  width: 100%;              /* stort kort på iPad */
+  width: 100%; /* stort kort på iPad */
   max-width: 80%;
   margin: 90px auto 0;
 }
@@ -220,7 +220,7 @@ button {
 
 .seasonal-news-blob-desktop {
   display: block;
-  width: 100%;             /* fylder hele kortets bredde */
+  width: 100%; /* fylder hele kortets bredde */
   height: auto;
   margin: 120px auto 0 auto;
 }
