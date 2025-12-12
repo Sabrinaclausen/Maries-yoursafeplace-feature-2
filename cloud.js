@@ -1,65 +1,64 @@
-// Holder styr på hvilket slide der er aktivt
 let slideIndex = 1;
-
-// Gemmer timeren til automatisk skift, så vi kan nulstille den
 let autoTimer = null;
 
-// Når DOM’en er klar, vis det første slide
-document.addEventListener("DOMContentLoaded", function () {
-  showSlides(slideIndex);
-});
+// Vis første slide
+showSlides(slideIndex);
 
-// Skift slide frem eller tilbage (bruges til pile-knapper)
+// Skift slide frem eller tilbage (pile)
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Hop direkte til et specifikt slide (bruges til prikker/hjerter)
+// Hop direkte til et slide (hjerter)
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-// Hovedfunktionen der styrer hvilket slide der vises
+
+// Viser det rigtige slide og opdaterer indikatorer
 function showSlides(n) {
   let i;
 
-    // Hent alle slides og alle hjerte-prikker
-  const slides = document.getElementsByClassName("review-card");
-  const dots = document.getElementsByClassName("dot-heart");
+// Hent alle slides og hjerter
+const slides = document.getElementsByClassName("review-card");
+const dots = document.getElementsByClassName("dot-heart");
 
-  // Hvis der ikke findes slides, stop funktionen
-  if (slides.length === 0) return;
 
-   // Loop slideIndex rundt hvis man går for langt
-  if (n > slides.length) {
-    slideIndex = 1; // hvis vi går ud over sidste slide → hop til første
-  }
-  if (n < 1) {
-    slideIndex = slides.length; // hvis vi går til før første → hop til sidste
-  }
+// Stop hvis der ikke er nogen slides
+if (slides.length === 0) return;
 
-  // Skjul alle slides
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  // Fjerner "active" fra alle hjerter 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-  // Vis det aktuelle slide (slideIndex - 1 fordi arrays starter ved 0)
-  slides[slideIndex - 1].style.display = "block";
-  
-  // Gør det tilsvarende hjerte aktivt (hvis det findes)
-  if (dots[slideIndex - 1]) {
-    dots[slideIndex - 1].className += " active";
-  }
-
- 
-  // Automatisk skift hvert 10. sekund → nulstil timeren hver gang et slide vises
-  clearTimeout(autoTimer);
-  autoTimer = setTimeout(function () {
-    plusSlides(1);
-  }, 10000);
+// Hvis man går videre fra sidste slide, start forfra
+if (n > slides.length) {
+  slideIndex = 1;
 }
+
+// Hvis man går baglæns fra første slide, gå til sidste
+if (n < 1) {
+  slideIndex = slides.length;
+}
+
+// Skjul alle slides, så kun ét vises ad gangen
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+
+// Fjern markering fra alle hjerter
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+
+// Vis det slide der er aktivt
+slides[slideIndex - 1].style.display = "block";
+
+// Marker det tilsvarende hjerte som aktivt
+if (dots[slideIndex - 1]) {
+  dots[slideIndex - 1].className += " active";
+}
+
+// Nulstil timer og skift automatisk til næste slide
+clearTimeout(autoTimer);
+autoTimer = setTimeout(function () {
+  plusSlides(1);
+}, 10000);
+}
+

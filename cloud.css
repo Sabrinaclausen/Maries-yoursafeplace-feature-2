@@ -71,7 +71,8 @@
   transform: translateY(-50%);
   width: 24px;
   left: 24px;
-  z-index: 5;   
+  z-index: 5;
+  cursor: pointer; 
 }
 
 /* Pil højre */
@@ -81,7 +82,8 @@
   transform: translateY(-50%);
   width: 24px;
   right: 24px;
-  z-index: 5;   
+  z-index: 5;
+  cursor: pointer;
 }
 
 /* Billede til laptop */
